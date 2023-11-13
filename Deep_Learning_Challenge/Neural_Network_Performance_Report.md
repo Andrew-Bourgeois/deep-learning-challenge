@@ -18,16 +18,16 @@ We made three additional attempts to optimize the model and increase the accurac
 * What variable(s) are the target(s) for your model?
     *   The target feature for our model was the 'IS_SUCCESSFUL' feature.
 * What variable(s) are the features for your model?
-    * The featuers we chose to use for teachign our model were, ['APPLICATION_TYPE', 'AFFILIATION','CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS']
+    * The featuers we chose to use for teaching our model were, ['APPLICATION_TYPE', 'AFFILIATION','CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS']
 * What variable(s) should be removed from the input because they are neither targets nor features.
     * We dropped both the 'EIN' and 'NAME' features as they were merely identification metadata about the companies.
 
 ### **Compiling, Training, and Evaluating the Model
 * How many neurons, layers, and activation functions did you select for your neural network model and why?
-    * We started with two hidden layers using the 'relu' activation, and an out put layer using the 'sigmoid' activation.
-    * We used 6 heurons for the first hidden layer and 5 for the second in order to: first, limit the amount of time it would take to run our first set of 100 epochs, and second, the  hope we would be able to have a good starting accuracy with which to further design our optimzations from.
+    * We started with two hidden layers using the 'relu' activation, and an output layer using the 'sigmoid' activation.
+    * We used 6 heurons for the first hidden layer and 5 for the second in order to: first, limit the amount of time it would take to run our first set of 100 epochs, and second, in the hope we would be able to have a good starting accuracy with which to further design our optimzations from.
 * Were you able to achieve the target model performance?
-    * We were not able to reach the desired target performance of 75% accuracy.
+    * We were not able to reach the desired target performance of 75% accuracy. Although in researching we determined other people were able to reach an over 80% accurtacy after adding the 'NAME' column back into the features used.
 * What steps did you take to increase model performance?
     * See model/optimization info below:
 
@@ -49,6 +49,8 @@ The initial model resulted in a loss of 0.5594 and accuracy of 0.7251.
 ## **Summary**
 
 Overall we were able to consistently train and test a neural network which can accurrately predict the success outcome of a funding venture 72.5% of the time. It would fall upon the risk tolerance of the Alphabet Soup company to decide if this 72.5% accuracy is close enough to the target 75% for them to move forward with implementing the model in their decision making process.
+
+While others were able to reach an accuracy of over 80% by including the 'NAME' feature back into the algorithm, it is not clear how they valued and weighted the name in order to evaluate it. I suspect the result is an artifact and not a good addition to the forecasting capabilities of the model.
 
 In the future I would change the model to try a different input activation and increase the number of nodes and hidden layers. Often the shape of the input data can be an important factor in the accuracy and success of a model. While increasing the number of hidden layers and neurons in each layer can improve the overall accuracy as well.
 
