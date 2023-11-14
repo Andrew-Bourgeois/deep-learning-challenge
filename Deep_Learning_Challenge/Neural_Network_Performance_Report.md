@@ -50,7 +50,7 @@ The initial model resulted in a loss of 0.5594 and accuracy of 0.7251.
 
 Overall we were able to consistently train and test a neural network which can accurrately predict the success outcome of a funding venture 72.5% of the time. It would fall upon the risk tolerance of the Alphabet Soup company to decide if this 72.5% accuracy is close enough to the target 75% for them to move forward with implementing the model in their decision making process.
 
-While others were able to reach an accuracy of over 80% by including the 'NAME' feature back into the algorithm, it is not clear how they valued and weighted the name in order to evaluate it. I suspect the result is an artifact and not a good addition to the forecasting capabilities of the model.
+In reseraching I learned others were able to reach an accuracy of over 80% by including the 'NAME' feature back into the algorithm and normalizing it. The explanation being that it reduces some of the "noise" in the oversampled data and allows the algorithm to further classify the data.
 
 In the future I would change the model to try a different input activation and increase the number of nodes and hidden layers. Often the shape of the input data can be an important factor in the accuracy and success of a model. While increasing the number of hidden layers and neurons in each layer can improve the overall accuracy as well.
 
