@@ -88,6 +88,6 @@ Alphabet Soups business team provided a CSV of more than 34,000 historical fundi
 
 ## **RESOURCES**
 
-* The provided starter code and the class examples from the UNC-CH-DA Module 20.
+* The provided starter code and the class examples from the UNC-CH-DA Module 21.
 
 * In order to complete the callback to save the model's weights every 5 epochs: https://stackoverflow.com/questions/51186330/save-model-weights-at-the-end-of-every-n-epochs 
